@@ -7,12 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'brand-color': '#cb6ce6'
       },
+      keyframes: {
+        swipe: {
+          '0%': { transform: 'translate(0)' },
+          '100%': { transform: 'translate(-100%)' }
+        }
+      },
+      animation: {
+        swipe: 'swipe 30s linear infinite backwards'
+      }
     },
+    screens: {
+      '2xl': {'max': '1535px'},
+      'lg': {'max': '1023px'},
+      'md': {'max': '767px'},
+      'sm': {'max': '639px'},
+    }
   },
   plugins: [],
 }
