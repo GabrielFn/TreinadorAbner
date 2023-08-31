@@ -58,7 +58,7 @@ export default function Home() {
               height={400}
             />
           </div>
-          <div className='flex flex-col gap-5 lg:gap-7 px-4 flex-2'>
+          <div className='flex flex-col gap-5 lg:gap-7 px-4 flex-[2]'>
             <h2 className="text-4xl font-bold lg:text-center lg:mt-6 lg:text-3xl">SE VOCÊ PROCURA…</h2>
             <ol className={`${mont.className} text-lg font-medium`}>
               <li className="border-b p-2">
