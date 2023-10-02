@@ -57,13 +57,14 @@ const Menu: React.FunctionComponent = () => {
               Depoimentos
             </Link>
           </li>
-          <li>
-            <button
-              className="px-5 py-3 hover:cursor-pointer border-b-2 border-transparent hover:border-brand-color hover:text-brand-color lg:hover:bg-white lg:w-full lg:text-left"
+          <li className="flex justify-center">
+            <Link
+              href="/treino-de-leoa#contact"
               onClick={toMenu}
+              className="px-5 py-3 hover:cursor-pointer border-b-2 border-transparent hover:border-brand-color hover:text-brand-color lg:hover:bg-white lg:w-full lg:text-left"
             >
               Contato
-            </button>
+            </Link>
           </li>
         </ul>
       </div>

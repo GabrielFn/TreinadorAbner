@@ -20,7 +20,7 @@ const mont = Montserrat({
 export default function TreinoDeLeoa() {
   return (
     <>
-      <div className="bg-black w-full bg-[url('/back.png')] bg-top bg-no-repeat mt-[80px] pb-16 lg:bg-none relative">
+      <div className="bg-black w-full bg-[url('/back.png')] bg-top bg-no-repeat mt-[70px] pb-16 lg:bg-none relative">
         <div className="w-full -bottom-[1px] h-[60px] rotate-180 bg-[url('/wave.svg')] absolute"></div>
         <div className="lg:flex-col-reverse lg:items-center max-w-6xl mx-auto px-4 flex pt-32 lg:pt-0 pb-32">
           <div className="flex-1 max-w-xl lg:text-center -mt-8">
@@ -579,7 +579,10 @@ export default function TreinoDeLeoa() {
           </div>
         </div>
       </div>
-      <div className="w-full pb-36 pt-36 relative bg-black flex justify-center">
+      <div
+        id="contact"
+        className="w-full pb-36 pt-36 relative bg-black flex justify-center"
+      >
         <div className="w-full h-[60px] -top-[2px]  bg-[url('/time-offer-divider.svg')] absolute z-20"></div>
         <div className="max-w-6xl mx-auto flex pt-8 px-4 items-center text-white flex-[2] gap-4 lg:flex-col-reverse">
           <div className="flex-[2] lg:text-center">
