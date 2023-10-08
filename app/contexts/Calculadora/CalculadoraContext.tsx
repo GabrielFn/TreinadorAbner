@@ -10,7 +10,7 @@ export const CalculadoraContext = React.createContext<CalculadoraContextTypes>({
   state: initialState,
 });
 
-const calculadoraLocalState = JSON.parse(
+let calculadoraLocalState = JSON.parse(
   localStorage.getItem("calculadoraTreinadorAbner") || "{}"
 );
 
@@ -32,7 +32,23 @@ const CalculadoraProvider: React.FunctionComponent<PropsWithChildren> = ({
   );
 
   useEffect(() => {
-    localStorage.setItem("calculadoraTreinadorAbner", JSON.stringify(state));
+    if (
+      typeof window !== "undefined" &&
+      JSON.parse(localStorage.getItem("calculadoraTreinadorAbner") || "{}")
+    ) {
+      dispatch({
+        type: "FILL_STORE",
+        value: JSON.parse(
+          localStorage.getItem("calculadoraTreinadorAbner") || "{}"
+        ),
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (state !== initialState) {
+      localStorage.setItem("calculadoraTreinadorAbner", JSON.stringify(state));
+    }
   }, [state]);
 
   const saveCalcSimulation = async (props: AwsersTypes) => {

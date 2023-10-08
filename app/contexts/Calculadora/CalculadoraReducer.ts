@@ -19,6 +19,11 @@ function reducer(
   action: any
 ): InitialStateCalculadora {
   switch (action.type) {
+    case 'FILL_STORE':
+      return {
+        ...state,
+        ...action.value
+      }
     case 'SAVE_CALC_SIMULATION':
       return {
         ...state,
