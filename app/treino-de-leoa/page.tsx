@@ -20,7 +20,7 @@ const mont = Montserrat({
 export default function TreinoDeLeoa() {
   return (
     <>
-      <div className="bg-black w-full bg-[url('/back.png')] bg-top bg-no-repeat mt-[70px] pb-16 lg:bg-none relative">
+      <div className="bg-black w-full bg-[url('/back.png')] bg-top bg-no-repeat pb-16 lg:bg-none relative">
         <div className="w-full -bottom-[1px] h-[60px] rotate-180 bg-[url('/wave.svg')] absolute"></div>
         <div className="lg:flex-col-reverse lg:items-center max-w-6xl mx-auto px-4 flex pt-32 lg:pt-0 pb-32">
           <div className="flex-1 max-w-xl lg:text-center -mt-8">
@@ -286,7 +286,9 @@ export default function TreinoDeLeoa() {
         </div>
 
         <div className="max-w-6xl mt-24 lg:mt-4 mb-16 mx-auto px-4 flex lg:flex-col-reverse">
-          <div className="flex-[3] text-white max-w-2xl mx-auto lg:text-center">
+          <div
+            className={`flex-[3] text-white max-w-2xl mx-auto lg:text-center ${mont.className}`}
+          >
             <h2 className="text-white text-4xl font-bold mb-5">
               UM APP COMPLETO COM <br />
               <span className="text-brand-color">TUDO O QUE VOCÊ PRECISA</span>
@@ -318,7 +320,10 @@ export default function TreinoDeLeoa() {
         <ModulesReverseCarousel />
         <div className="w-full h-[60px] -bottom-[2px] rotate-180 bg-[url('/promo-divider.svg')] absolute z-20"></div>
       </div>
-      <div id="price" className="flex flex-col gap-12 pb-16 relative">
+      <div
+        id="price"
+        className={`flex flex-col gap-12 pb-16 relative ${mont.className}`}
+      >
         <div className="max-w-6xl mx-auto flex pt-16 flex-col items-center">
           <div className="text-center flex flex-col gap-4 max-w-4xl mx-4">
             <h2 className="text-4xl font-extrabold">
@@ -332,7 +337,7 @@ export default function TreinoDeLeoa() {
             </p>
           </div>
           <div className="flex mt-16 gap-4 items-center lg:flex-col-reverse">
-            <div className="w-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg">
+            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg">
               <h1 className="text-3xl">45 Dias</h1>
 
               <h2 className="text-5xl mt-4 font-extrabold">
@@ -400,7 +405,7 @@ export default function TreinoDeLeoa() {
                 *renovado automaticamente a cada trimestre*
               </p>
             </div>
-            <div className="w-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg">
+            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg">
               <h1 className="text-3xl">Plano Trimestral</h1>
 
               <h2 className="text-5xl mt-4 font-extrabold">
@@ -479,7 +484,7 @@ export default function TreinoDeLeoa() {
                 *renovado automaticamente a cada trimestre*
               </p>
             </div>
-            <div className="w-[350px] bg-brand-color text-white p-6 text-center flex flex-col gap-2 rounded-lg relative">
+            <div className="w-max-[350px] bg-brand-color text-white p-6 text-center flex flex-col gap-2 rounded-lg relative">
               <Image
                 src="/star.webp"
                 width={80}

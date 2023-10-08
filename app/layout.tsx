@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Menu from "./components/Menu";
 import Link from "next/link";
+import Providers from "./contexts/Providers";
 
 config.autoAddCss = false;
 
@@ -37,14 +38,16 @@ export default function RootLayout({
                   alt="Treinador abner"
                   width={60}
                   height={60}
-                  className="lg:w-[65px]"
+                  className="lg:w-[50px]"
                 />
               </Link>
             </div>
             <Menu />
           </div>
         </div>
-        {children}
+        <div className="pt-[75px] lg:pt-[65px] min-h-full flex flex-col">
+          <Providers>{children}</Providers>
+        </div>
       </body>
     </html>
   );
