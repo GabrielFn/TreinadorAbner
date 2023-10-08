@@ -1,6 +1,8 @@
 interface CalculadoraContextTypes {
   state: InitialStateCalculadora;
+  dispatch: React.Dispatch<any>;
   saveCalcSimulation: (props: SaveCalcSimulationProps) => void;
+  salvarPlanoAlimentar: (quantidadeRefeicoes: number) => void;
 }
 
 interface InitialStateCalculadora {
@@ -10,6 +12,18 @@ interface InitialStateCalculadora {
   aguaDiaria: number;
   caloriasParaObjetivo: number;
   awsers: AwsersTypes;
+  planoAlimentar: PlanoAlimentarTypes | null;
+}
+
+interface PlanoAlimentarTypes {
+  quantidadesTotais: QuantidadesTypes;
+  quantidadesPorRefeicao: QuantidadesTypes;
+}
+
+interface QuantidadesTypes {
+  carboidratos: number;
+  proteinas: number;
+  gorduras: number;
 }
 
 interface AwsersTypes {
@@ -19,4 +33,5 @@ interface AwsersTypes {
   altura: number;
   objetivo: string;
   nivelAtividade: number,
+  quantidadeRefeicoes: number
 }

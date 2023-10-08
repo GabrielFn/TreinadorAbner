@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 html,
-body,
-body > div:first-child,
-div#__next,
-div#__next > div {
+body {
   height: 100%;
 }

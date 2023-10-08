@@ -31,12 +31,60 @@ const useCalculadora = () => {
     }
   }
 
+  const calculaQuantidadesPorObjetivo = (objetivo: string, caloriasParaObjetivo: number,  peso: number) => {
+    let carboidratos: number;
+    let proteinas: number;
+    let gorduras: number;
+
+    switch (objetivo) {
+      case 'perderPeso':
+        gorduras = peso * 0.7; // 0,7g de gordura por kg de peso
+        proteinas = peso * 1.5; // 1,5g de proteína por kg de peso
+        carboidratos = (caloriasParaObjetivo - (gorduras * 9 + proteinas * 4)) / 4; // Carboidratos preenchem as calorias restantes
+        break;
+      case 'ganharPeso':
+        gorduras = peso * 1; // 1g de gordura por kg de peso
+        proteinas = peso * 2.2; // 2,2g de proteína por kg de peso
+        carboidratos = (caloriasParaObjetivo - (gorduras * 9 + proteinas * 4)) / 4; // Carboidratos preenchem as calorias restantes
+        break;
+      default:
+        gorduras = peso * 1; // 1g de gordura por kg de peso
+        proteinas = peso * 2; // 2g de proteína por kg de peso
+        carboidratos = (caloriasParaObjetivo - (gorduras * 9 + proteinas * 4)) / 4; // Carboidratos preenchem as calorias restantes
+        break;
+    }
+
+    return {
+      gorduras,
+      proteinas,
+      carboidratos
+    }
+  }
+
+  const categoriasIMC = (imc: number) => {
+    if (imc < 18.5) {
+      return "Abaixo do peso";
+    } else if (imc < 24.9) {
+      return "Peso normal";
+    } else if (imc < 29.9) {
+      return "Sobrepeso";
+    } else if (imc < 34.9) {
+      return "Obesidade grau I";
+    } else if (imc < 39.9) {
+      return "Obesidade grau II";
+    } else {
+      return "Obesidade grau III (obesidade mórbida)";
+    }
+  };
+
   return {
     calculaTMB,
     calculaGET,
     calculaIMC,
+    categoriasIMC,
     calculaAguaDiaria,
-    calculaCaloriasParaObjetivo
+    calculaCaloriasParaObjetivo,
+    calculaQuantidadesPorObjetivo
   }
 };
 

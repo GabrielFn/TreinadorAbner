@@ -7,12 +7,10 @@ import reducer, { initialState } from "./CalculadoraReducer";
 
 export const CalculadoraContext = React.createContext<CalculadoraContextTypes>({
   saveCalcSimulation: () => null,
+  salvarPlanoAlimentar: () => null,
+  dispatch: () => null,
   state: initialState,
 });
-
-let calculadoraLocalState = JSON.parse(
-  localStorage.getItem("calculadoraTreinadorAbner") || "{}"
-);
 
 const CalculadoraProvider: React.FunctionComponent<PropsWithChildren> = ({
   children,
@@ -24,12 +22,10 @@ const CalculadoraProvider: React.FunctionComponent<PropsWithChildren> = ({
     calculaIMC,
     calculaAguaDiaria,
     calculaCaloriasParaObjetivo,
+    calculaQuantidadesPorObjetivo,
   } = useCalculadora();
 
-  const [state, dispatch] = useReducer(
-    reducer,
-    calculadoraLocalState || initialState
-  );
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
     if (
@@ -76,14 +72,43 @@ const CalculadoraProvider: React.FunctionComponent<PropsWithChildren> = ({
       awsers: props,
     });
 
+    dispatch({
+      type: "LIMPA_PLANO_ALIMENTAR",
+    });
+
     push("/calculadora/resultado");
+  };
+
+  const salvarPlanoAlimentar = async (quantidadeRefeicoes: number) => {
+    const quantidadesTotais = calculaQuantidadesPorObjetivo(
+      state.awsers.objetivo,
+      state.caloriasParaObjetivo,
+      state.awsers.peso
+    );
+
+    const quantidadesPorRefeicao = {
+      carboidratos: quantidadesTotais.carboidratos / quantidadeRefeicoes,
+      proteinas: quantidadesTotais.proteinas / quantidadeRefeicoes,
+      gorduras: quantidadesTotais.gorduras / quantidadeRefeicoes,
+    };
+
+    dispatch({
+      type: "SALVAR_PLANO_ALIMENTAR",
+      quantidadeRefeicoes,
+      planoAlimentar: {
+        quantidadesTotais,
+        quantidadesPorRefeicao,
+      },
+    });
   };
 
   return (
     <CalculadoraContext.Provider
       value={{
         state,
+        dispatch,
         saveCalcSimulation,
+        salvarPlanoAlimentar,
       }}
     >
       {children}

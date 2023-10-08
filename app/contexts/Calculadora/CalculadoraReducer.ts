@@ -10,8 +10,10 @@ export const initialState: InitialStateCalculadora = {
     nivelAtividade: 0,
     objetivo: '',
     peso: 0,
-    sexo: ''
-  }
+    sexo: '',
+    quantidadeRefeicoes: 0
+  },
+  planoAlimentar: null,
 };
   
 function reducer(
@@ -34,6 +36,15 @@ function reducer(
         caloriasParaObjetivo: action.caloriasParaObjetivo,
         awsers: action.awsers
       };
+    case 'SALVAR_PLANO_ALIMENTAR':
+      return {
+        ...state, planoAlimentar: action.planoAlimentar, awsers: { ...state.awsers, quantidadeRefeicoes: action.quantidadeRefeicoes }
+      }
+    case 'LIMPA_PLANO_ALIMENTAR':
+      return {
+        ...state,
+        planoAlimentar: null
+      }
     default:
       return state;
   }
