@@ -29,6 +29,7 @@ export default function Calculadora() {
       altura: Number(formData.get("altura")),
       objetivo: String(formData.get("objetivo")),
       nivelAtividade: Number(formData.get("nivelAtividade")),
+      quantidadeRefeicoes: 0,
     };
 
     saveCalcSimulation(awsers);

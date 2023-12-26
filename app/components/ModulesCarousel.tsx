@@ -2,15 +2,15 @@
 
 const ModulesCarousel: React.FunctionComponent = () => {
   const images = [
-    { id: "1", src: "/away.webp" },
-    { id: "2", src: "/away.webp" },
-    { id: "3", src: "/away.webp" },
-    { id: "4", src: "/away.webp" },
-    { id: "5", src: "/away.webp" },
-    { id: "6", src: "/away.webp" },
-    { id: "7", src: "/away.webp" },
-    { id: "8", src: "/away.webp" },
-    { id: "9", src: "/away.webp" },
+    { id: "1", src: "/cursos/3-dias-da-semana.webp" },
+    { id: "2", src: "/cursos/5-dias-da-semana.webp" },
+    { id: "5", src: "/cursos/emagrece-10.webp" },
+    { id: "6", src: "/cursos/fit-4-weeks.webp" },
+    { id: "8", src: "/cursos/perca-3-em-2.webp" },
+    { id: "9", src: "/cursos/zumba.webp" },
+    { id: "3", src: "/cursos/barriga-negativa.webp" },
+    { id: "4", src: "/cursos/e-books.webp" },
+    { id: "7", src: "/cursos/nutricao.webp" },
   ];
 
   return (

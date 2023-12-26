@@ -316,7 +316,7 @@ export default function TreinoDeLeoa() {
             />
           </div>
         </div>
-        <ModulesCarousel />
+        {/* <ModulesCarousel /> */}
         <ModulesReverseCarousel />
         <div className="w-full h-[60px] -bottom-[2px] rotate-180 bg-[url('/promo-divider.svg')] absolute z-20"></div>
       </div>
