@@ -8,8 +8,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Carousel from "../components/Carousel";
 import Depoiments from "../components/Depoiments";
-import ModulesCarousel from "../components/ModulesCarousel";
 import ModulesReverseCarousel from "../components/ModulesReverseCarousel";
+import RedirectButton from "../components/RedirectButton";
 
 const mont = Montserrat({
   weight: ["400", "500", "600", "700"],
@@ -21,7 +21,7 @@ export default function TreinoDeLeoa() {
   return (
     <>
       <div className="bg-black w-full bg-[url('/back.png')] bg-top bg-no-repeat pb-16 lg:bg-none relative">
-        <div className="w-full -bottom-[1px] h-[60px] rotate-180 bg-[url('/wave.svg')] absolute"></div>
+        <div className="w-full -bottom-[1px] h-[60px] rotate-180 bg-[url('/wave.svg')] absolute bg-[length:100%_100%]"></div>
         <div className="lg:flex-col-reverse lg:items-center max-w-6xl mx-auto px-4 flex pt-32 lg:pt-0 pb-32">
           <div className="flex-1 max-w-xl lg:text-center -mt-8">
             <h1 className="text-white text-4xl font-extrabold">
@@ -115,7 +115,7 @@ export default function TreinoDeLeoa() {
       <div className="w-full pb-36 pt-36 relative bg-gradient-to-r from-[#331b3b] z-20 to-[#000000] flex justify-center">
         <div className="absolute w-full h-full top-0 bg-[url('/trainer-2.png')] z-10 bg-right-bottom bg-auto lg:bg-[length:400px] bg-no-repeat lg:bg-top max-w-6xl mx-auto"></div>
         <div className="absolute w-full h-full top-0 bg-[url('/menu-logo.png')] opacity-20 bg-[90%] bg-no-repeat bg-auto lg:bg-[length:400px] lg:bg-top max-w-6xl mx-auto"></div>
-        <div className="w-full h-[60px] -top-[1px] bg-[url('/promo-divider.svg')] absolute"></div>
+        <div className="w-full h-[60px] -top-[1px] bg-[url('/promo-divider.svg')] absolute bg-[length:100%_100%]"></div>
         <div className="max-w-6xl mx-auto flex z-20 w-full px-4 lg:justify-center lg:pt-[230px]">
           <div className="flex gap-4 flex-col max-w-lg lg:max-w-xl lg:text-center">
             <h1 className="text-white text-3xl font-extrabold">
@@ -172,7 +172,7 @@ export default function TreinoDeLeoa() {
         </div>
       </div>
       <div id="depoiments" className="bg-black relative pt-16 pb-24">
-        <div className="w-full h-[60px] -top-[2px]  bg-[url('/time-offer-divider.svg')] absolute z-20"></div>
+        <div className="w-full h-[60px] -top-[2px]  bg-[url('/time-offer-divider.svg')] absolute z-20 bg-[length:100%_100%]"></div>
         <div className="px-4 max-w-6xl mx-auto flex pt-16 flex-col pb-[40px]">
           <h2 className="text-white text-4xl font-bold text-center mb-5">
             CONHEÇA ALGUMAS{" "}
@@ -309,7 +309,7 @@ export default function TreinoDeLeoa() {
           <div className="flex-[2] flex justify-end lg:justify-center">
             <Image
               className="h-auto w-auto"
-              src="/app-presentation.png"
+              src="/app-model.png"
               alt="app presentation"
               width={180}
               height={300}
@@ -337,11 +337,11 @@ export default function TreinoDeLeoa() {
             </p>
           </div>
           <div className="flex mt-16 gap-4 items-center lg:flex-col-reverse">
-            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg">
-              <h1 className="text-3xl">45 Dias</h1>
+            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg flex-1">
+              <h1 className="text-3xl">Plano Mensal</h1>
 
               <h2 className="text-5xl mt-4 font-extrabold">
-                R$169,00 <small className="text-xl">à vista</small>
+                R$49,90 <small className="text-xl">à vista</small>
               </h2>
 
               <ul className="text-left mt-6 text-sm flex flex-col border-t border-[#FFFFFF33]">
@@ -353,7 +353,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba 1 protocolo de treinamento com validade de 45 dias
+                  Treinos específicos com atualizações mensais (academia e casa)
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -363,7 +363,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Tenha acesso por 45 dias de suporte premium via whatsapp
+                  Dietas específicas conforme o seu objetivo com atualizações da nutri
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -373,7 +373,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba um e-book: manual de treinamento
+                  Comunidade vip de suporte premium via whatsapp
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -383,9 +383,27 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba atualizações semanais de cargas, apostila de
-                  alongamentos e apostila de treino contendo vídeos
-                  demonstrativos com execução de cada exercício do seu treino
+                  Progressão de carga inteligente
+                </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Treinos com vídeo aulas de todos os exercícios ensinando a execução correta de cada exercício
+                </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Apostila de alongamentos
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -397,21 +415,31 @@ export default function TreinoDeLeoa() {
                   </span>
                   Correções dos exercícios através de vídeos no whatsapp
                 </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Bônus: treinos de barriga negativa, zumba e vários e-books para perder barriga
+                </li>
               </ul>
-              <button className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full">
+              <RedirectButton className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full" link="https://payfast.greenn.com.br/30896/offer/PnVsex">
                 <b>ASSINE AGORA!</b>
-              </button>
+              </RedirectButton>
               <p className="text-xs mt-4 font-bold italic">
                 *renovado automaticamente a cada trimestre*
               </p>
             </div>
-            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg">
+            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg flex-1">
               <h1 className="text-3xl">Plano Trimestral</h1>
 
               <h2 className="text-5xl mt-4 font-extrabold">
-                <small className="text-xl">3x de</small> RS139,99
+                <small className="text-xl">3x de</small> R$42,28
               </h2>
-              <h4 className="text-xl">ou R$399,00 à vista</h4>
+              <h4 className="text-xl">ou R$119,76 à vista</h4>
 
               <ul className="text-left mt-6 text-sm flex flex-col border-t border-[#FFFFFF33]">
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
@@ -422,7 +450,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba 2 protocolos de treinamento com validade de 45 dias
+                  Treinos específicos com atualizações mensais (academia e casa)
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -432,7 +460,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Tenha acesso por 3 meses de suporte premium via whatsapp
+                  Dietas específicas conforme o seu objetivo com atualizações da nutri
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -442,7 +470,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba um e-book: manual de treinamento
+                  Comunidade vip de suporte premium via whatsapp
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -452,9 +480,27 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba atualizações semanais de cargas, apostila de
-                  alongamentos e apostila de treino contendo vídeos
-                  demonstrativos com execução de cada exercício do seu treino
+                  Progressão de carga inteligente
+                </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Treinos com vídeo aulas de todos os exercícios ensinando a execução correta de cada exercício
+                </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Apostila de alongamentos
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -474,17 +520,27 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  BÔNUS: E-book: Receitas Saudáveis e práticas (100% gratuito)
+                  Bônus: treinos de barriga negativa, zumba e vários e-books para perder barriga
+                </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Desconto de 20% (economize R$29,94)
                 </li>
               </ul>
-              <button className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full">
+              <RedirectButton link="https://payfast.greenn.com.br/42283/offer/iH1ck4" className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full">
                 <b>ASSINE AGORA!</b>
-              </button>
+              </RedirectButton>
               <p className="text-xs mt-4 font-bold italic">
                 *renovado automaticamente a cada trimestre*
               </p>
             </div>
-            <div className="w-max-[350px] bg-brand-color text-white p-6 text-center flex flex-col gap-2 rounded-lg relative">
+            <div className="w-max-[350px] bg-brand-color text-white p-6 text-center flex flex-col gap-2 rounded-lg relative flex-1">
               <Image
                 src="/star.webp"
                 width={80}
@@ -496,9 +552,9 @@ export default function TreinoDeLeoa() {
               <h3 className="text-lg">O MAIS VENDIDO 🔥</h3>
 
               <h2 className="text-5xl mt-4 font-extrabold">
-                <small className="text-xl">6x de</small> RS109,99
+                <small className="text-xl">6x de</small> R$41,35
               </h2>
-              <h4 className="text-xl">ou R$599,00 à vista</h4>
+              <h4 className="text-xl">ou R$224,55 à vista</h4>
 
               <ul className="text-left mt-6 text-sm flex flex-col border-t border-[#FFFFFF33]">
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
@@ -509,7 +565,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba 4 protocolos de treinamento com validade de 45 dias
+                  Treinos específicos com atualizações mensais (academia e casa)
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -519,7 +575,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Tenha acesso por 6 meses de suporte premium via whatsapp
+                  Dietas específicas conforme o seu objetivo com atualizações da nutri
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -529,7 +585,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba um e-book: manual de treinamento
+                  Comunidade vip de suporte premium via whatsapp
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -539,9 +595,27 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Receba atualizações semanais de cargas, apostila de
-                  alongamentos e apostila de treino contendo vídeos
-                  demonstrativos com execução de cada exercício do seu treino
+                  Progressão de carga inteligente
+                </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Treinos com vídeo aulas de todos os exercícios ensinando a execução correta de cada exercício
+                </li>
+                <li className="flex py-2 border-b border-[#FFFFFF33]">
+                  <span className="min-w-[25px]">
+                    <FontAwesomeIcon
+                      icon={faCheck}
+                      size="xl"
+                      color="lightgreen"
+                    />
+                  </span>
+                  Apostila de alongamentos
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -561,7 +635,7 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  BÔNUS: E-book: Receitas Saudáveis e práticas (100% gratuito)
+                  Bônus: treinos de barriga negativa, zumba e vários e-books para perder barriga
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -571,12 +645,12 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  + 1 bônus surpresa
+                  Desconto de 25% (economize R$74,85)
                 </li>
               </ul>
-              <button className="py-7 px-14 rounded-full bg-black text-white text-center transition-all mt-6 animate-attention">
+              <RedirectButton link="https://payfast.greenn.com.br/42286/offer/dcq3To" className="py-7 px-14 rounded-full bg-black text-white text-center transition-all mt-6 animate-attention">
                 <b>ASSINE AGORA!</b>
-              </button>
+              </RedirectButton>
               <p className="text-xs mt-2 font-bold italic">
                 *renovado automaticamente a cada ano*
               </p>
