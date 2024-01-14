@@ -38,9 +38,12 @@ export default function TreinoDeLeoa() {
               apenas seu corpo, mas também sua determinação, com o apoio
               especializado do Treino de Leoa.
             </h2>
-            <button className="py-7 px-14 rounded-full mt-6 bg-brand-color text-white text-center hover:scale-110 transition-all">
+            <RedirectButton
+              className="py-7 px-14 rounded-full mt-6 bg-brand-color text-white text-center hover:scale-110 transition-all"
+              link="https://payfast.greenn.com.br/30896/offer/PnVsex"
+            >
               <b>QUERO COMEÇAR MINHA JORNADA AGORA</b>
-            </button>
+            </RedirectButton>
           </div>
           <div className="hidden lg:flex lg:justify-center pt-16">
             <Image
@@ -136,9 +139,12 @@ export default function TreinoDeLeoa() {
               enfrentando desafios como uma verdadeira Leoa.
             </p>
 
-            <button className="py-7 px-14 rounded-full mt-6 bg-brand-color text-white text-center hover:scale-110 transition-all">
+            <RedirectButton
+              className="py-7 px-14 rounded-full mt-6 bg-brand-color text-white text-center hover:scale-110 transition-all"
+              link="https://payfast.greenn.com.br/30896/offer/PnVsex"
+            >
               <b>COMEÇAR AGORA</b>
-            </button>
+            </RedirectButton>
           </div>
         </div>
         <div className="w-full h-[60px] -bottom-[2px] rotate-180 bg-[url('/promo-divider.svg')] absolute z-20"></div>
@@ -166,9 +172,12 @@ export default function TreinoDeLeoa() {
           <Carousel />
         </div>
         <div className="flex justify-center px-4">
-          <button className="py-7 px-14 rounded-full bg-brand-color text-white text-center hover:scale-110 transition-all">
+          <RedirectButton
+            className="py-7 px-14 rounded-full bg-brand-color text-white text-center hover:scale-110 transition-all"
+            link="https://payfast.greenn.com.br/30896/offer/PnVsex"
+          >
             <b>QUERO ESSE RESULTADO AGORA</b>
-          </button>
+          </RedirectButton>
         </div>
       </div>
       <div id="depoiments" className="bg-black relative pt-16 pb-24">
@@ -194,9 +203,12 @@ export default function TreinoDeLeoa() {
           <Depoiments />
         </div>
         <div className="flex justify-center px-4">
-          <button className="py-7 px-14 rounded-full bg-brand-color text-white text-center hover:scale-110 transition-all">
+          <RedirectButton
+            className="py-7 px-14 rounded-full bg-brand-color text-white text-center hover:scale-110 transition-all"
+            link="https://payfast.greenn.com.br/30896/offer/PnVsex"
+          >
             <b>QUERO TER UMA HISTÓRIA DE SUCESSO</b>
-          </button>
+          </RedirectButton>
         </div>
         <div className="w-full h-[60px] -bottom-[1px] rotate-180  bg-[url('/time-offer-divider.svg')] absolute z-20"></div>
       </div>
@@ -272,9 +284,12 @@ export default function TreinoDeLeoa() {
           </p>
         </div>
         <div className="flex justify-center px-4">
-          <button className="py-7 px-14 rounded-full bg-brand-color text-white text-center hover:scale-110 transition-all">
+          <RedirectButton
+            className="py-7 px-14 rounded-full bg-brand-color text-white text-center hover:scale-110 transition-all"
+            link="https://payfast.greenn.com.br/30896/offer/PnVsex"
+          >
             <b>QUERO ME TRANSFORMAR EM UMA LEOA</b>
-          </button>
+          </RedirectButton>
         </div>
 
         <div className="px-4 max-w-5xl lg:max-w-sm mx-auto flex pt-24 pb-[40px] gap-6 items-center">
@@ -363,7 +378,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Dietas específicas conforme o seu objetivo com atualizações da nutri
+                  Dietas específicas conforme o seu objetivo com atualizações da
+                  nutri
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -393,7 +409,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Treinos com vídeo aulas de todos os exercícios ensinando a execução correta de cada exercício
+                  Treinos com vídeo aulas de todos os exercícios ensinando a
+                  execução correta de cada exercício
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -423,10 +440,14 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Bônus: treinos de barriga negativa, zumba e vários e-books para perder barriga
+                  Bônus: treinos de barriga negativa, zumba e vários e-books
+                  para perder barriga
                 </li>
               </ul>
-              <RedirectButton className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full" link="https://payfast.greenn.com.br/30896/offer/PnVsex">
+              <RedirectButton
+                className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full"
+                link="https://payfast.greenn.com.br/30896/offer/PnVsex"
+              >
                 <b>ASSINE AGORA!</b>
               </RedirectButton>
               <p className="text-xs mt-4 font-bold italic">
@@ -460,7 +481,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Dietas específicas conforme o seu objetivo com atualizações da nutri
+                  Dietas específicas conforme o seu objetivo com atualizações da
+                  nutri
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -490,7 +512,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Treinos com vídeo aulas de todos os exercícios ensinando a execução correta de cada exercício
+                  Treinos com vídeo aulas de todos os exercícios ensinando a
+                  execução correta de cada exercício
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -520,7 +543,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Bônus: treinos de barriga negativa, zumba e vários e-books para perder barriga
+                  Bônus: treinos de barriga negativa, zumba e vários e-books
+                  para perder barriga
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -533,7 +557,10 @@ export default function TreinoDeLeoa() {
                   Desconto de 20% (economize R$29,94)
                 </li>
               </ul>
-              <RedirectButton link="https://payfast.greenn.com.br/42283/offer/iH1ck4" className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full">
+              <RedirectButton
+                link="https://payfast.greenn.com.br/42283/offer/iH1ck4"
+                className="py-7 px-14 rounded-full bg-white hover:scale-110 text-black text-center transition-all mt-6 w-full"
+              >
                 <b>ASSINE AGORA!</b>
               </RedirectButton>
               <p className="text-xs mt-4 font-bold italic">
@@ -575,7 +602,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Dietas específicas conforme o seu objetivo com atualizações da nutri
+                  Dietas específicas conforme o seu objetivo com atualizações da
+                  nutri
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -605,7 +633,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Treinos com vídeo aulas de todos os exercícios ensinando a execução correta de cada exercício
+                  Treinos com vídeo aulas de todos os exercícios ensinando a
+                  execução correta de cada exercício
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -635,7 +664,8 @@ export default function TreinoDeLeoa() {
                       color="lightgreen"
                     />
                   </span>
-                  Bônus: treinos de barriga negativa, zumba e vários e-books para perder barriga
+                  Bônus: treinos de barriga negativa, zumba e vários e-books
+                  para perder barriga
                 </li>
                 <li className="flex py-2 border-b border-[#FFFFFF33]">
                   <span className="min-w-[25px]">
@@ -648,7 +678,10 @@ export default function TreinoDeLeoa() {
                   Desconto de 25% (economize R$74,85)
                 </li>
               </ul>
-              <RedirectButton link="https://payfast.greenn.com.br/42286/offer/dcq3To" className="py-7 px-14 rounded-full bg-black text-white text-center transition-all mt-6 animate-attention">
+              <RedirectButton
+                link="https://payfast.greenn.com.br/42286/offer/dcq3To"
+                className="py-7 px-14 rounded-full bg-black text-white text-center transition-all mt-6 animate-attention"
+              >
                 <b>ASSINE AGORA!</b>
               </RedirectButton>
               <p className="text-xs mt-2 font-bold italic">
