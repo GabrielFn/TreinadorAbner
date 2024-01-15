@@ -23,7 +23,7 @@ export default function TreinoDeLeoa() {
       <div className="bg-black w-full bg-[url('/back.png')] bg-top bg-no-repeat pb-16 lg:bg-none relative">
         <div className="w-full -bottom-[1px] h-[60px] rotate-180 bg-[url('/wave.svg')] absolute bg-[length:100%_100%]"></div>
         <div className="lg:flex-col-reverse lg:items-center max-w-6xl mx-auto px-4 flex pt-32 lg:pt-0 pb-32">
-          <div className="flex-1 max-w-xl lg:text-center -mt-8">
+          <div className="flex-1 max-w-xl lg:text-center -mt-8 z-10">
             <h1 className="text-white text-4xl font-extrabold">
               DESPERTE A <span className="text-brand-color">LEOA</span> EM
               VOCÊ!! DOMINE SEU CORPO COM O INCRÍVEL{" "}
@@ -43,9 +43,10 @@ export default function TreinoDeLeoa() {
             </button>
           </div>
           <div className="hidden lg:flex lg:justify-center pt-16">
-            <Image
+            <img
               src="/trainer.jpg"
               alt="Treinador abner"
+              className="w-[600px] h-[600px] md:w-[400px] md:h-[400px]"
               width={600}
               height={600}
             />
@@ -55,11 +56,10 @@ export default function TreinoDeLeoa() {
       <div>
         <div className="max-w-6xl mx-auto flex lg:flex-col my-10 gap-4 items-center justify-around">
           <div className="lg:-mt-[170px] lg:z-40 flex-1">
-            <Image
+            <img
               src="/mulher-frustrada.png"
               alt="Mulher frustrada"
-              width={400}
-              height={400}
+              className="w-auto h-auto max-w-[400px] max-h-[400px]"
             />
           </div>
           <div className="flex flex-col gap-5 lg:gap-7 px-4 flex-[2]">
@@ -141,7 +141,7 @@ export default function TreinoDeLeoa() {
             </button>
           </div>
         </div>
-        <div className="w-full h-[60px] -bottom-[2px] rotate-180 bg-[url('/promo-divider.svg')] absolute z-20"></div>
+        <div className="w-full h-[60px] -bottom-[2px] rotate-180 bg-[url('/promo-divider.svg')] absolute z-20 bg-[length:100%_100%]"></div>
       </div>
       <div id="results" className="flex flex-col gap-12 pb-16 relative">
         <div className="max-w-6xl mx-auto flex pt-16 flex-col items-center">
@@ -253,7 +253,7 @@ export default function TreinoDeLeoa() {
         </div>
       </div>
       <div id="modules" className="bg-black relative pt-16 pb-24">
-        <div className="w-full -top-[2px] h-[60px] bg-[url('/wave.svg')] absolute"></div>
+        <div className="w-full -top-[2px] h-[60px] bg-[url('/wave.svg')] absolute bg-[length:100%_100%]"></div>
         <div className="px-4 max-w-4xl mx-auto flex pt-16 flex-col pb-[40px]">
           <h2 className="text-white text-4xl font-bold text-center mb-5">
             O Treino de Leoa é{" "}
@@ -307,18 +307,16 @@ export default function TreinoDeLeoa() {
             </p>
           </div>
           <div className="flex-[2] flex justify-end lg:justify-center">
-            <Image
-              className="h-auto w-auto"
+            <img
+              className="h-auto w-auto max-w-[300px] max-h-[300px]"
               src="/app-model.png"
               alt="app presentation"
-              width={180}
-              height={300}
             />
           </div>
         </div>
         {/* <ModulesCarousel /> */}
         <ModulesReverseCarousel />
-        <div className="w-full h-[60px] -bottom-[2px] rotate-180 bg-[url('/promo-divider.svg')] absolute z-20"></div>
+        <div className="w-full h-[60px] -bottom-[2px] rotate-180 bg-[url('/promo-divider.svg')] absolute z-20 bg-[length:100%_100%]"></div>
       </div>
       <div
         id="price"
@@ -337,7 +335,7 @@ export default function TreinoDeLeoa() {
             </p>
           </div>
           <div className="flex mt-16 gap-4 items-center lg:flex-col-reverse">
-            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg flex-1">
+            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg flex-1 mx-4">
               <h1 className="text-3xl">Plano Mensal</h1>
 
               <h2 className="text-5xl mt-4 font-extrabold">
@@ -433,7 +431,7 @@ export default function TreinoDeLeoa() {
                 *renovado automaticamente a cada trimestre*
               </p>
             </div>
-            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg flex-1">
+            <div className="w-max-[350px] bg-black text-white p-6 text-center gap-2 rounded-lg flex-1 mx-4">
               <h1 className="text-3xl">Plano Trimestral</h1>
 
               <h2 className="text-5xl mt-4 font-extrabold">
@@ -540,13 +538,13 @@ export default function TreinoDeLeoa() {
                 *renovado automaticamente a cada trimestre*
               </p>
             </div>
-            <div className="w-max-[350px] bg-brand-color text-white p-6 text-center flex flex-col gap-2 rounded-lg relative flex-1">
-              <Image
+            <div className="w-max-[350px] bg-brand-color text-white p-6 text-center flex flex-col gap-2 rounded-lg relative flex-1 mx-4">
+              <img
                 src="/star.webp"
                 width={80}
                 height={80}
                 alt="star"
-                className="absolute -top-10 left-1/2 transform -translate-x-1/2"
+                className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-[80px] h-[80px]"
               />
               <h1 className="text-3xl font-bold mt-4">Plano Semestral</h1>
               <h3 className="text-lg">O MAIS VENDIDO 🔥</h3>
@@ -678,7 +676,7 @@ export default function TreinoDeLeoa() {
             </button>
           </div>
           <div className="relative w-full h-full flex-1 justify-end flex lg:absolute lg:justify-center">
-            <Image width={300} height={300} src="/whats_logo.svg" alt="whats" />
+            <img src="/whats_logo.svg" alt="whats" />
           </div>
         </div>
       </div>

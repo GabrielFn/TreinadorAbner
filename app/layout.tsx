@@ -33,12 +33,12 @@ export default function RootLayout({
           <div className="flex flex-wrap max-w-6xl mx-auto px-4 py-2 relative">
             <div className="lg:flex-1">
               <Link href="/">
-                <Image
+                <img
                   src="/menu-logo.png"
                   alt="Treinador abner"
                   width={60}
                   height={60}
-                  className="lg:w-[50px]"
+                  className="lg:w-[50px] w-[60px] h-[60x]"
                 />
               </Link>
             </div>
