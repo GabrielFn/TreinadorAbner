@@ -7,5 +7,5 @@ const mont = Montserrat({
 });
 
 export default function Home() {
-  return <>teste</>;
+  return <div className="flex-1 bg-black w-full"></div>;
 }
